@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <title>THE SOLAR SYSTEM</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xtb6qkc.css">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main-bundled.js"></script>
+</head>
+<body>
+<header>
+  <h1>the solar system</h1>
+  <ul class="nav">
+    <li data-api-id="mercure">
+      <a class="link">mercury</a>
+    </li>
+    <li data-api-id="venus">
+      <a class="link">venus</a>
+    </li>
+    <li data-api-id="terre">
+      <a class="link">earth</a>
+    </li>
+    <li data-api-id="mars">
+      <a class="link">mars</a>
+    </li>
+    <li data-api-id="jupiter">
+      <a class="link">jupiter</a>
+    </li>
+    <li data-api-id="saturne">
+      <a class="link">saturn</a>
+    </li>
+    <li data-api-id="uranus">
+      <a class="link">uranus</a>
+    </li>
+    <li data-api-id="neptune">
+      <a class="link">neptune</a>
+    </li>
+  </ul>
+</header>
+<main>
+  <div id="solarBodyImageContainer" class="solarBodyImageContainer">
+    <div id="imageTemplateContainer" class="imageTemplateContainer"></div>
+    <p id="noImageMessage" class="noImageMessage">Sorry, no image available!</p>
+  </div>
+  <div class="solarBodyTextContainer">
+    <div id="factsTemplateContainer" class="factsTemplateContainer"></div>
+    <form class="searchForm">
+      <label for="userInput">or try looking for a dwarf planet, asteroid or comet:</label>
+      <div>
+        <input type="text" id="userInput" class="userInput" name="userInput">
+        <button id="searchSubmitBtn" class="searchSubmitBtn">submit</button>
+      </div>
+      <p id="searchErrorMessage" class="searchErrorMessage">Sorry, we couldn't find this solar body. Try another!</p>
+    </form>
+  </div>
+</main>
+</body>
+</html>
